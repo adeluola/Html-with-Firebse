@@ -127,5 +127,5 @@ function saveUser(Fname, Lname, email, password) {
 function logout(){
   document.cookie = "fname = ;";
   console.log("logout");
-  window.location = 'Register.html';
+  window.location = 'index.html';
 }

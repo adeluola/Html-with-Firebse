@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .contact form
+        {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:20px;
+    }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand">Register</h1>
+    <div class="wrapper">
+      
+      <div class="contact">
+        <a href="signin.html"><button id="signin">Sign In</button></a> if you have an existing account.
+        <div class="err" id="err">Fill all the form</div>
+        <form id="contactForm" name = "frm">
+          <p>
+            <label>First Name</label>
+            <input type="text" name="Fname" id="Fname" required>
+          </p>
+          <p>
+            <label>Last Name</label>
+            <input type="text" name="Lname" id="Lname" required>
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Password</label>
+            <input type="password" name="password" id="password" required>
+          </p>
+         
+            <button type="button" onclick=submitForm()>Submit</button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
